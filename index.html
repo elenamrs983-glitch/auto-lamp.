@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -291,10 +291,39 @@
         padding: 25px;
       }
     }
-  </style>
+  </style>.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
 </head>
 
-<body>
+<body><section class="products">
+  <h2>Our Auto Lamp Products</h2>
+
+  <div class="product-gallery">
+
+    <img src="auto-lamp-1.jpg" alt="Auto Lamp Headlight">
+
+    <img src="auto-lamp-2.jpg" alt="Auto Lamp Front Grille">
+
+    <img src="auto-lamp-3.jpg" alt="Auto Lamp Tail Light">
+
+    <img src="auto-lamp-4.jpg" alt="Auto Lamp Headlight">
+
+    <img src="auto-lamp-5.jpg" alt="Auto Lamp Headlight Set">
+
+  </div>
+</section>
 
   <header>
     <div class="logo">AUTO <span>LAMP</span></div>
